@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Flask as a micro server</title>
+</head>
+<body style="background-color: #E0842E">
+    <article>
+        <!-- really good practice to use semantic tags for accessibility -->
+        <section>
+            <h2>Swapi</h2>
+            <aside>
+                <!-- Flask micro-syntax to decide what to render -->
+                {% if data != None %}
+                <h3>Category: {{category}}</h3>
+                <h3>ID: {{id}}</h3>
+                <p>{{data}}</p>
+                {% else %}
+                <p>Resource not found</p>
+                {% endif %}
+            </aside>
+        </section>
+    </article>
+
+</body>
+</html>

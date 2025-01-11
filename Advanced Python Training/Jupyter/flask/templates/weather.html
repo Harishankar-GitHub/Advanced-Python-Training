@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Flask as a micro server</title>
+</head>
+<body style="background-color: #2EE0CE">
+    <article>
+        <!-- really good practice to use semantic tags for accessibility -->
+        <section>
+            <h2>Weather Details</h2>
+            <aside>
+                <!-- Flask micro-syntax to decide what to render -->
+                {% if data != None %}
+                <h3>City: {{city}}</h3>
+                <p>{{data}}</p>
+                {% else %}
+                <p>Error fetching weather details</p>
+                {% endif %}
+            </aside>
+        </section>
+    </article>
+
+</body>
+</html>
